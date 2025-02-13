@@ -55,7 +55,7 @@
             } 
         }
     }
-    session_destroy();
+    
     ?>
 
     <h1>Supermarket Management</h1>
