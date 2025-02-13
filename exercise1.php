@@ -48,15 +48,11 @@
         if (isset($_POST["add"])) {
             if ($product === 'milk' || $product === 'softDrink') {
                 $_SESSION[$product] += $quantity;
-            } else {
-                echo "Producto no encontrado";
-            }
+            } 
         } elseif (isset($_POST["remove"])) {
             if ($product == 'milk' || $product == 'softDrink') {
                 $_SESSION[$product] = max(0, $_SESSION[$product] - $quantity);
-            } else {
-                echo "Producto no encontrado";
-            }
+            } 
         }
     }
     session_destroy();
